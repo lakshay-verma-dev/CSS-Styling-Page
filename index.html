@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+    <title>Document</title>
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+        body
+        {
+            height: 100%;
+            width: 100%;
+            /* padding: 50px; */
+        }
+        nav
+        {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+        .navbar
+        {
+            margin-right: 150px;
+            width: 500px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbar a
+        {
+            text-decoration: none;
+            color: black;
+        }
+        .navbar button
+        {
+            
+            padding: 5px;
+            border: 2px solid black;
+            background-color: white;
+        }
+        .agency
+        {
+            position: static;
+            background-image: url(bg-image-30.jpg);
+            margin: 0px;
+            width: 100%;
+            height: 500px;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .para
+        {
+            color: white;
+            text-align: right;
+            padding: 100px;
+            padding-top: 210px;
+        }
+        .para span
+        {
+            font-size: 5rem;
+            font-weight: bolder;
+            margin-bottom: 30px;
+        }
+        .para p
+        {
+            color: white;
+            margin-bottom: 30px;
+        }
+        .para button
+        {
+            padding: 10px;
+            padding-left: 20px;
+            padding-right: 20px; 
+            color: white;
+            background-color: rgb(210, 27, 27);
+            border: none;
+        }
+        .stratagy
+        {
+            margin-bottom: 70px;
+            margin-top: 60px;
+            display: flex;
+            justify-content: center;
+            gap: 80px;
+            /* padding-left: 100px;
+            padding-right: 100px; */
+        }
+        .msg
+        {
+            text-align: center;
+        }
+        .msg p
+        {
+            margin: 12px;
+            color: black;
+            font-weight: bold;
+        }
+        .stratagy .msg .google-icon
+        {
+            color: red;
+            font-size: 30px;
+        }
+        .blur
+        {
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            padding: 90px;
+            background-image: url(bg-image-17.jpg);
+            opacity: 0.9;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .data
+        {
+            text-align: center;
+            color: white;
+        }
+        .data p
+        {
+            color: white;
+        }
+        .data span
+        {
+            font-weight: bolder;
+            font-size: 3.5rem;
+        }
+        .team
+        {
+            margin-bottom: 100px;
+            display: flex;
+            justify-content: center;
+            /* padding-left: 120px; */
+            /* padding-right: 120px; */
+            gap: 30px;
+        }
+        .team .member p
+        {
+            color: black;
+            font-weight: bold;
+        }
+        .team .member img 
+        {
+            height: 400px;
+            width: 290px;
+        }
+        .team .member i
+        {
+            margin-top: 13px;
+            margin-right: 10px;
+        }
+        .plan
+        {
+            text-align: center;
+            margin-top: 80px;
+            margin-bottom: 60px;
+        }
+        .plan h1
+        {
+            font-size: 3.5rem;
+            font-weight: bolder;
+            margin-bottom: 10px;
+        }
+        .plan p
+        {
+            text-align: center;
+            color: black;
+            line-height: normal;
+            margin-bottom: 40px;
+        }
+        .container
+        {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            /* padding-left: 280px;
+            padding-right: 280px; */
+            margin-bottom: 60px;
+        }
+        .box
+        {
+            text-align: center;
+            height: 410px;
+            width: 270px;
+            border: 2px solid rgb(220 0 52);
+            border-radius: 5px;
+            padding: 20px;
+        }
+        .box span
+        {
+            font-size: 4rem;
+        }
+        .box p
+        {
+            margin-bottom: 20px;
+        }
+        .box hr
+        {
+            margin-bottom: 20px;
+        }
+        .box ul,li
+        {
+            line-height: 29px;
+            list-style-type: square;
+            text-align: left;
+            padding-left: 20px;
+        }
+        .box button
+        {
+            margin: 10px;
+            padding: 6px;
+            font-size: 0.85rem;
+        }
+        .box1 span,p
+        {
+            color: rgb(220 0 52);
+        }
+        .box1 hr
+        {
+            background-color: rgb(220 0 52);
+        }
+        .box1 button
+        {
+            border: 2px solid rgb(220 0 52);
+            color: rgb(220 0 52);
+            background-color: white;
+        }
+        .box2
+        {
+            color: white;
+            border: none;
+            background: linear-gradient(to bottom, rgb(210, 71, 21),rgb(189, 30, 30) , rgb(216, 48, 76));
+        }
+        .box2 button
+        {
+            border: none;
+            color: rgb(220 0 52);
+        }
+        .box2 p
+        {
+            color: white;
+        }
+        .foot
+        {
+            padding-top: 80px;
+            text-align: center;
+            height: 300px;
+            background: linear-gradient(to right, rgb(210, 71, 21),rgb(189, 30, 30) , rgb(216, 48, 76));
+        }
+        .foot p
+        {
+            color: white;
+            font-size: 3rem;
+            font-weight: bolder;
+            padding-bottom: 30px;
+        }
+        .foot span
+        {
+            color: white;
+            margin-bottom: 30px;
+        }
+        .foot button
+        {
+            padding: 8px;
+            padding-left: 20px;
+            padding-right: 20px; 
+            border: 2px solid white;
+            color: white;
+            background-color: transparent;
+        }
+        .foot1
+        {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: rgb(35, 33, 33);
+        }
+        .icon
+        {
+            display: flex;
+            justify-content: space-between;
+        }
+        .icon i
+        {
+            padding: 8px;
+            border: 2px solid rgb(178, 168, 168);
+            border-radius: 50%;
+            margin: 14px;
+            color: rgb(178, 168, 168);
+        }
+        .copy p
+        {
+            color: white;
+            font-size: 0.50rem;
+        }
+        .about
+        {
+            padding-top: 80px;
+            padding-bottom: 50px;
+            background-color: rgba(220, 220, 220, 0.64);
+            /* padding-left: 120px;
+            padding-right: 120px; */
+            gap: 40px;
+            display: flex;
+            justify-content: center;
+        }
+        .about img
+        {
+            box-shadow: 9px 10px 10px rgb(180, 175, 175);
+            height: 500px;
+        }
+        .about h1
+        {
+            font-weight: bolder;
+            font-size: 3.5rem;
+        }
+        .about h1,h3,p,ul
+        {
+            margin-bottom: 15px;
+            /* text-align: left; */
+        }
+        .about p
+        {
+            color: black;
+        }
+        .read
+        {
+            background-color: rgba(220, 220, 220, 0.64); 
+            padding-bottom: 100px;
+            padding-top: 60px;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            /* padding-left: 120px;
+            padding-right: 120px; */
+        }
+        .read p
+        {
+            color: black;
+        }
+        .read .more h3 span
+        {
+            padding-bottom: 3px;
+            border-bottom: 4px solid red;
+        }
+        .read .services h3 span
+        {
+            padding-bottom: 3px;
+            border-bottom: 4px solid red;
+        }
+        .read .more img,h2,p,h3
+        {
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="logo-symbol-dark.png" alt="" class="img">
+            <div class="navbar">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Service</a>
+                <a href="#">Pages</a>
+                <a href="#">Blocks</a>
+                <a href="#">Contact</a>
+                <button>Buy Now</button>
+            </div>
+        </nav>
+    </header>
+    <div class="agency">
+        <div class="para">
+            <span>AGENCY.</span>
+            <P>There are many variation of passages but the majority <br> have suffered alteration.</P>
+            <button>Contact us</button>
+        </div>
+    </div>
+    <div class="stratagy">
+        <div class="msg">
+            <span class="material-symbols-outlined google-icon">
+                cast
+                </span>
+            <p>Business stratagy</p>
+            <span>I throw myself down among the <br>tall grass by the stream as i lie <br>close to earth.</span>
+        </div>
+        <div class="msg">
+            <span class="material-symbols-outlined google-icon">
+                stacks
+                </span>
+            <p>Website Development</p>
+            <span>I throw myself down among the <br>tall grass by the stream as i lie <br>close to earth.</span>
+        </div>
+        <div class="msg">
+            <span class="material-symbols-outlined google-icon">
+                group
+                </span>
+            <p>Marketing & Reporting</p>
+            <span>I throw myself down among the <br>tall grass by the stream as i lie <br>close to earth.</span>
+        </div>
+    </div>
+    <div class="read">
+        <div class="services">
+            <h1>services</h1>
+            <p>There are many variations of <br>passages of lorem ipsum <br>available but</p>
+            <h3><span>Request</span> Custom services</h3>
+        </div>
+        <div class="more">
+            <img src="corporate-01.jpg" alt="">
+            <h2>Thinking Development</h2>
+            <p>I throw myself down among the tall <br>grass by the stream</p>
+            <h3><span>Read</span> more</h3>
+        </div>
+        <div class="more">
+            <img src="corporate-02.jpg" alt="">
+            <h2>Business Consulting</h2>
+            <p>I throw myself down among the tall <br>grass by the stream</p>
+            <h3><span>Read</span> more</h3>
+        </div>
+        <div class="more">
+            <img src="corporate-03.jpg" alt="">
+            <h2>Business Development</h2>
+            <p>I throw myself down among the tall <br>grass by the stream</p>
+            <h3><span>Read</span> more</h3>
+        </div>
+    </div>
+    <div class="blur">
+        <div class="data">
+            <span>333<sup>+</sup></span>
+            <p>The standard chunk of Lorem Ipsum <br>used since the 1500s is reproduced <br>below for those</p>
+        </div>
+        <div class="data">
+            <span>192<sup>+</sup></span>
+            <p>The standard chunk of Lorem Ipsum <br>used since the 1500s is reproduced <br>below for those</p>
+        </div>
+        <div class="data">
+            <span>23<sup>+</sup></span>
+            <p>The standard chunk of Lorem Ipsum <br>used since the 1500s is reproduced <br>below for those</p>
+        </div>
+    </div>
+    <div class="plan">
+        <h1>Managing Team</h1>
+        <p>There are many variations of passages of lorem ipsum available <br>but the majority have suffered alteration</p>
+    </div>
+    <div class="team">
+        <div class="member">
+            <img src="team-03.jpg" alt="">
+            <p>Jone Jan</p>
+            <span>Sr. Web Developer</span><br>
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+            <i class="fa-brands fa-twitter"></i>
+        </div>
+        <div class="member">
+            <img src="team-05.jpg" alt="">
+            <p>Jone Jan</p>
+            <span>Sr. Web Developer</span><br>
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+            <i class="fa-brands fa-twitter"></i>
+        </div>
+        <div class="member">
+            <img src="team-03.jpg" alt="">
+            <p>Jone Jan</p>
+            <span>Sr. Web Developer</span><br>
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+            <i class="fa-brands fa-twitter"></i>
+        </div>
+        <div class="member">
+            <img src="team-05.jpg" alt="">
+            <p>Jone Jan</p>
+            <span>Sr. Web Developer</span><br>
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+            <i class="fa-brands fa-twitter"></i>
+        </div>
+    </div>
+    <div class="about">
+        <div class="text">
+            <h1>About</h1>
+            <p>There are many variations of passages of Lorem Ipsum available. <br>but the majority have suffered alteration in some form. by injected <br>humour, or randomised words which don't look even slightly believable </p>
+            <h3>Lorem Ipsum dolor sit.</h3>
+            <ul>
+                <li>The Philosophy of Business analytics</li>
+                <li>Fast-Track your business</li>
+                <li>Lies And Damn Lies About business</li>
+                <li>The Ultimate Deal On business</li>
+            </ul>
+            <h3>Lorem Ipsum dolor sit.</h3>
+            <ul>
+                <li>The Philosophy of Business analytics</li>
+                <li>Fast-Track your business</li>
+                <li>Lies And Damn Lies About business</li>
+                <li>The Ultimate Deal On business</li>
+            </ul>
+        </div>
+        <img src="about-3.png" alt="">
+    </div>
+    <div class="plan">
+        <h1>Pricing plan</h1>
+        <p>There are many variations of passages of lorem ipsum available <br>but the majority have suffered alteration</p>
+    </div>
+        <div class="container">
+            <div class="box1 box">
+                <h4>Free</h4>
+                <span>29</span>
+                <p>USD Per Month</p>
+                <hr>
+                <ul>
+                    <li>5 PPC Companaigns</li>
+                    <li>Digital Marketing</li>
+                    <li>Marketing Agency</li>
+                    <li>Seo Friendly</li>
+                    <li>UI/UX</li>
+                </ul>
+                <button>PURCHASE NOW</button>
+            </div>
+            <div class="box2 box">
+                <h4>Business</h4>
+                <span>30</span>
+                <p>USD Per Month</p>
+                <hr>
+                <ul>
+                    <li>5 PPC Companaigns</li>
+                    <li>Digital Marketing</li>
+                    <li>Marketing Agency</li>
+                    <li>Seo Friendly</li>
+                    <li>UI/UX</li>
+                </ul>
+                <button>PURCHASE NOW</button>
+            </div>
+            <div class="box1 box">
+                <h4>Advanced</h4>
+                <span>29</span>
+                <p>USD Per Month</p>
+                <hr>
+                <ul>
+                    <li>5 PPC Companaigns</li>
+                    <li>Digital Marketing</li>
+                    <li>Marketing Agency</li>
+                    <li>Seo Friendly</li>
+                    <li>UI/UX</li>
+                </ul>
+                <button>PURCHASE NOW</button>
+            </div>
+        </div>
+    
+    <footer>
+        <div class="foot">
+            <span>READY TO DO THIS</span>
+            <P>Let's get to work</P>
+            <button>Contact us</button>
+        </div>
+        <div class="foot1">
+            <div class="logo">
+                <img src="logo.png" alt="">
+            </div>
+            <div class="icon">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+            <div class="copy">
+                <p>Copyright @ 2020 Rainbow- Themes. All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
